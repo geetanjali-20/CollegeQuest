@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us{% endblock title %}
+{% block body %}
+<div class="p-5 mb-4 text-bg-dark ">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">College Quest</h1>
+        <p class="col-md-8 fs-4">College Quest is a AI based portal to show information of best 5 colleges according to the various filters provided by student.</p>
+            <button class="btn btn-primary btn-lg" type="button">Contact us</button>
+    </div>
+</div>
+<div class="container px-5 ">
+        
+    <h3 class="text-center">Contact Us</h3>
+    
+    <form method="POST" action="/contact">
+        {% csrf_token %}
+        <div class="mb-2">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="name">
+            
+        </div> 
+        <div class="mb-2">
+            <label for="phone" class="form-label">Mobile No.</label>
+            <input type="phone" class="form-control" id="phone" name="phone" aria-describedby="phone">
+            
+        </div>
+        <div class="mb-2">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group mb-2">
+            <label for="desc" class="form-label">Your Query</label>
+            <textarea class="form-control" id="desc"  rows="3" name="desc"></textarea>
+            
+        </div>
+        
+    
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        <button type="reset" class="btn btn-primary mb-3 px-3">Reset</button>
+      </form>
+</div>
+
+<div class="container d-flex justify-content-center" style="margin-left:auto; margin-right: auto" >
+    <nav aria-label="Page navigation example ">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="services">Previous</a></li>
+      
+      <li class="page-item"><a class="page-link" href="/">Home</a></li>
+    </ul>
+  </nav>
+  </div>
+ {% endblock body %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Blogs{% endblock title %}
+{% block body %}
+<h1> Blogs</h1>
+
+<div class="container px-5 ">
+    <h3 class="text-center">blog</h3>
+    
+    <form method="POST" action="/blogs">
+        {% csrf_token %}
+        <div class="mb-2">
+            <label for="Authorname" class="form-label">Author_Name</label>
+            <input type="text" class="form-control" id="Authorname" name="Authorname" aria-describedby="name">
+            
+        </div> 
+        <div class="mb-2">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" aria-describedby="name">
+            
+        </div> 
+        
+        <div class="form-group mb-2">
+            <label for="desc" class="form-label">Blog</label>
+            <textarea class="form-control" id="desc"  rows="3" name="desc"></textarea>
+            
+        </div>
+        
+    
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        <button type="reset" class="btn btn-primary mb-3 px-3">Reset</button>
+      </form>
+</div>
+
+{% endblock body %}

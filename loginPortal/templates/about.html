@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% block title %}About Us{% endblock title %}
+{% block body %}
+<main>
+    <div class="container-fluid px-0">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="/static/images/two.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block">
+                
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/static/images/one.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block">
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/three.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block">
+                
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+  
+  
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+    <div class="container marketing my-5">
+    <h2>Authors</h2><hr>
+  
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="/static/images/photo.jpg" alt="Logo" width="140" height="140" class="bd-placeholder-img rounded-circle" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect>
+          <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Geetanjali Sharma</font></font></h2>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Always remember that a computer does not have intelligence, but it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning.</font></font></p>
+          <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/geetanjali-sharma-8ba8931ab/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="/static/images/photo.jpg" alt="Logo" width="140" height="140" class="bd-placeholder-img rounded-circle" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect>
+          <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Geetanjali Sharma</font></font></h2>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Always remember that a computer does not have intelligence, but it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning.</font></font></p>
+          <p><a class="btn btn-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+        </div><!-- /.col-lg-4 -->
+        {% comment %} <div class="col-lg-4">
+          <img src="/static/images/photo.jpg" alt="Logo" width="140" height="140" class="bd-placeholder-img rounded-circle" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect>
+          <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shreyansh Sahai</font></font></h2>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Always remember that a computer does not have intelligence, but it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning.</font></font></p>
+          <p><a class="btn btn-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+        </div><!-- /.col-lg-4 --> {% endcomment %}
+      </div><!-- /.row -->
+  
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Featured first title. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It will blow your mind.</font></font></span></h2>
+          <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The human face is a very complex and distinct part of its body. </font><font style="vertical-align: inherit;">In fact, it is one of the most complex signaling systems we have available; </font><font style="vertical-align: inherit;">It includes more than 40 independent muscles, both structurally and functionally, so that each of them can be operated independently of the other; </font><font style="vertical-align: inherit;">It is one of the strongest indicators of emotions.</font></font></p>
+        </div>
+        <div class="col-md-5">
+          <img src="/static/images/10.png" alt="Logo" width="400" height="400" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
+          
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Oh yeah, that's good. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">See for yourself.</font></font></span></h2>
+          <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">When we laugh or cry, we display our emotions, allowing others to peek into our mind while "reading" our faces based on changes in key facial components such as the eyes, eyebrows, eyelids, nose, and lips.</font></font></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="/static/images/11.jpg" alt="Logo" width="400" height="400" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
+          
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Finally, this. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Checkmate.</font></font></span></h2>
+          <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">All the muscles in our body are supported by nerves connected from all parts of the body to the spinal cord and brain. </font><font style="vertical-align: inherit;">This neural communication is bidirectional, meaning that the nerve causes muscle contractions based on brain signals, and at the same time sends information about the state of the muscles to the brain</font></font></p>
+        </div>
+        <div class="col-md-5">
+          <img src="/static/images/12.jpg" alt="Logo" width="400" height="400" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
+          
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <!-- /END THE FEATURETTES -->
+  
+    </div><!-- /.container -->
+    <div class="container d-flex justify-content-center" style="margin-left:auto; margin-right: auto" >
+      <nav aria-label="Page navigation example ">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="home">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="services">1</a></li>
+        <li class="page-item"><a class="page-link" href="contact">2</a></li>
+        <li class="page-item"><a class="page-link" href="services">Next</a></li>
+      </ul>
+    </nav>
+    </div>
+  
+    
+ {% endblock body %}
